@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="formulario.css">
+</head>
+<body>
+    <form action="" method="post">
+        <fieldset>
+            <legend> Aula</legend>
+            <div>
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome">
+            </div>
+            <div>
+                <label>Série:</label>
+                <input type="radio" name="serie" value="1" id="um">
+                <label for="um">1°</label>
+                <input type="radio" name="serie" value="2" id="dois">
+                <label for="dois">2°</label>
+                <input type="radio" name="serie" value="3" id="tres">
+                <label for="tres">3°</label>
+            </div>
+            <div>
+                <label>Conteúdo:</label>
+                <input type="checkbox" name="cont[]" value="HTML" id="html">
+                <label for="html">HTML</label>
+                <input type="checkbox" name="cont[]" value="CSS" id="css">
+                <label for="css">CSS</label>
+            </div>
+            <div>
+                <label for="datahora">Data e Hora:</label>
+                <input type="datetime-local" name="datahora" id="datahora">
+            </div>
+            <div>
+            <label for="sala">Sala:</label>
+                <select name="sala" id="sala">
+                    <option></option>
+                    <option value="1">Lab 1</option>
+                    <option value="2">Lab 2</option>
+                    <option value="3">Lab 3</option>
+                </select>
+            </div>    
+            <div>
+                <label for="desc">Descrição:</label>
+                <textarea name="desc" id="des" cols="15" rows="3"></textarea>
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpar</button>
+            </div>
+        </fieldset>
+    </form>        
+</body>
+</html>

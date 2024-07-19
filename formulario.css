@@ -1,0 +1,12 @@
+fieldset {
+    min-height: 100vh;
+}
+div {
+    display: flex;
+    margin: 1rem 0;
+}
+
+button {
+    margin-right: 5px;
+}
+
